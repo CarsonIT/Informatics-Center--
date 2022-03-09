@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20762B29-0288-41B9-B196-81E524F374F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_TaiKhoan.cs" />
+    <Compile Include="D_DangKyKhoaHoc_Used.cs" />
+    <Compile Include="D_GiaoVien_PDT.cs" />
+    <Compile Include="D_KhoaHoc_PDT.cs" />
+    <Compile Include="D_LopKhoaHoc_PDT.cs" />
+    <Compile Include="D_LopMonHoc_PDT.cs" />
+    <Compile Include="D_NhomHocPhan_PDT.cs" />
+    <Compile Include="Newbie\D_DangKyThongTinCaNhan_Newbie.cs" />
+    <Compile Include="dbConnectionData.cs" />
+    <Compile Include="D_KhoaHoc_Used.cs" />
+    <Compile Include="GiaoVien\D_LopKhoaHoc.cs" />
+    <Compile Include="GiaoVien\D_LopMonHoc.cs" />
+    <Compile Include="KhongXai\D_HocVien.cs" />
+    <Compile Include="KhongXai\D_HocVienThamGiaLopHoc.cs" />
+    <Compile Include="Newbie\D_KhoaHoc_Newbie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XemKetQuaHocTap\DAL_KQHocPhan.cs" />
+    <Compile Include="XemKetQuaHocTap\DAL_KQMonHoc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9137bf59-622f-46c1-8fc5-6f2502534636}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

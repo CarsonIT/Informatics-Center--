@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFCED46E-CFAB-4256-B656-7F7514C514FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GiaoDien</RootNamespace>
+    <AssemblyName>GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI_Main_GiaoVien\ChamDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_GiaoVien\ChamDiem.designer.cs">
+      <DependentUpon>ChamDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_GiaoVien\GIAOVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_GiaoVien\GIAOVIEN.designer.cs">
+      <DependentUpon>GIAOVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\ChuyenKhoa\GUI_ChuyenKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\ChuyenKhoa\GUI_ChuyenKhoa.designer.cs">
+      <DependentUpon>GUI_ChuyenKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_GiaoVien\GUI_GiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_GiaoVien\GUI_GiaoVien.Designer.cs">
+      <DependentUpon>GUI_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_DangKyThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_DangKyThongTin.Designer.cs">
+      <DependentUpon>GUI_DangKyThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\GUI_Newbie_HocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\GUI_Newbie_HocVien.Designer.cs">
+      <DependentUpon>GUI_Newbie_HocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_Newbie_DangKyKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_Newbie_DangKyKhoaHoc.Designer.cs">
+      <DependentUpon>GUI_Newbie_DangKyKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Used\DangKyKhoaHoc_Used\Used_DangKyKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\DangKyKhoaHoc_Used\Used_DangKyKhoaHoc.Designer.cs">
+      <DependentUpon>Used_DangKyKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChungChi.designer.cs">
+      <DependentUpon>GUI_MKH_LopChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChuyenDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChuyenDe.designer.cs">
+      <DependentUpon>GUI_MKH_LopChuyenDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopKyThuatVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MKH_LopKyThuatVien.designer.cs">
+      <DependentUpon>GUI_MKH_LopKyThuatVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MoKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_MoKhoaHoc.designer.cs">
+      <DependentUpon>GUI_MoKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_PhongDaoTao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_PhongDaoTao\GUI_PhongDaoTao.Designer.cs">
+      <DependentUpon>GUI_PhongDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_SignIn.Designer.cs">
+      <DependentUpon>GUI_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\KhoaHocDaDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\KhoaHocDaDangKy.Designer.cs">
+      <DependentUpon>KhoaHocDaDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <DependentUpon>Login.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_ChuyenLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_ChuyenLop.Designer.cs">
+      <DependentUpon>GUI_ChuyenLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KhoaHocDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KhoaHocDangKy.Designer.cs">
+      <DependentUpon>GUI_KhoaHocDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Used\GUI_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\GUI_MainMenu.Designer.cs">
+      <DependentUpon>GUI_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyHocLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyHocLai.Designer.cs">
+      <DependentUpon>GUI_DangKyHocLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyThiLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyThiLai.Designer.cs">
+      <DependentUpon>GUI_DangKyThiLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_LichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_LichThi.Designer.cs">
+      <DependentUpon>GUI_LichThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KetQuaHocTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KetQuaHocTap.Designer.cs">
+      <DependentUpon>GUI_KetQuaHocTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhongXai\GUI_SubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhongXai\GUI_SubMenu.Designer.cs">
+      <DependentUpon>GUI_SubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopChungChi.designer.cs">
+      <DependentUpon>GUI_KQLopChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopKTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopKTV.designer.cs">
+      <DependentUpon>GUI_KQLopKTV.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI_Main_GiaoVien\ChamDiem.resx">
+      <DependentUpon>ChamDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_GiaoVien\GIAOVIEN.resx">
+      <DependentUpon>GIAOVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Used\XemKhoaHocDaDangKy\ChuyenKhoa\GUI_ChuyenKhoa.resx">
+      <DependentUpon>GUI_ChuyenKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_GiaoVien\GUI_GiaoVien.resx">
+      <DependentUpon>GUI_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_DangKyThongTin.resx">
+      <DependentUpon>GUI_DangKyThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Newbie\GUI_Newbie_HocVien.resx">
+      <DependentUpon>GUI_Newbie_HocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Newbie\DangKyKhoaHoc_Newbie\GUI_Newbie_DangKyKhoaHoc.resx">
+      <DependentUpon>GUI_Newbie_DangKyKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Used\DangKyKhoaHoc_Used\Used_DangKyKhoaHoc.resx">
+      <DependentUpon>Used_DangKyKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChungChi.resx">
+      <DependentUpon>GUI_MKH_LopChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_PhongDaoTao\GUI_MKH_LopChuyenDe.resx">
+      <DependentUpon>GUI_MKH_LopChuyenDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_PhongDaoTao\GUI_MKH_LopKyThuatVien.resx">
+      <DependentUpon>GUI_MKH_LopKyThuatVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_PhongDaoTao\GUI_MoKhoaHoc.resx">
+      <DependentUpon>GUI_MoKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_PhongDaoTao\GUI_PhongDaoTao.resx">
+      <DependentUpon>GUI_PhongDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_SignIn.resx">
+      <DependentUpon>GUI_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Used\XemKhoaHocDaDangKy\KhoaHocDaDangKy.resx">
+      <DependentUpon>KhoaHocDaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_ChuyenLop.resx">
+      <DependentUpon>GUI_ChuyenLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KhoaHocDangKy.resx">
+      <DependentUpon>GUI_KhoaHocDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Used\GUI_MainMenu.resx">
+      <DependentUpon>GUI_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyHocLai.resx">
+      <DependentUpon>GUI_DangKyHocLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_DangKyThiLai.resx">
+      <DependentUpon>GUI_DangKyThiLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_LichThi.resx">
+      <DependentUpon>GUI_LichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\Sub_Registered Course_Signed_In\GUI_KetQuaHocTap.resx">
+      <DependentUpon>GUI_KetQuaHocTap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhongXai\GUI_SubMenu.resx">
+      <DependentUpon>GUI_SubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopChungChi.resx">
+      <DependentUpon>GUI_KQLopChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main_Used\XemKhoaHocDaDangKy\XemKetQuaHocTap\GUI_KQLopKTV.resx">
+      <DependentUpon>GUI_KQLopKTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Login.xsc">
+      <DependentUpon>Login.xsd</DependentUpon>
+    </None>
+    <None Include="Login.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Login.xss">
+      <DependentUpon>Login.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{a61879fe-2bde-4ad2-8d1b-7bc55c7ef246}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9137bf59-622f-46c1-8fc5-6f2502534636}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="KhongXai\Sub_Course_Signed_In\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
